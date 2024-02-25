@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Wang xj, SUSTECH, LIC=ATTQ1-CILB5-12TLE-5U4RU-A4NUN-T4SA0
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  F:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+F:\STM32\课件\给学生\week1\Lab1_reg1\lab1.uvprojx
+Project File Date:  02/09/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'F:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(11): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        *( unsigned int * )0x40010C0C &= ~(1<<5); //LED on
+                                      ~~ ^~~~~~~
+main.c(17): warning: no previous prototype for function 'SystemInit' [-Wmissing-prototypes]
+void SystemInit(void)
+     ^
+main.c(17): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SystemInit(void)
+^
+static 
+2 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=368 RO-data=320 RW-data=0 ZI-data=1632  
+FromELF: creating hex file...
+".\Objects\lab1.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  F:\Users\lenovo\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

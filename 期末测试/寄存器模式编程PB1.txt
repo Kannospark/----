@@ -1,0 +1,20 @@
+int main (void)
+{
+
+	// 打开 GPIOB端口的时钟
+	*( unsigned int * )0x40021018 |=  ( (1) << 4 );
+	
+	// 配置IO口PB5为输出 ,推挽输出，速率为10M
+	*( unsigned int * )0x40011000 &= 0xFFFFFF0F; 
+	*( unsigned int * )0x40011000 |=  0X00000010;   
+	// 控制 ODR 寄存器	
+	*( unsigned int * )0x4001100C &= ~(1<<1); //LED on
+	//*( unsigned int * )0x4001100C |= (1<<1);  //LED off
+	
+}
+
+
+void SystemInit(void)
+{
+	// 函数体为空，目的是为了骗过编译器不报错
+}
